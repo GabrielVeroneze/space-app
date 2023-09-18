@@ -128,6 +128,9 @@ const EstilosGlobais = createGlobalStyle`
     [type="search"]::-webkit-search-decoration {
         -webkit-appearance: none;
     }
+    ::placeholder {
+        color: inherit;
+    }
     ::-webkit-file-upload-button {
         -webkit-appearance: button; 
         font: inherit; 
