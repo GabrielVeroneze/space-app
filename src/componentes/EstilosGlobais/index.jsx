@@ -144,6 +144,9 @@ const EstilosGlobais = createGlobalStyle`
     [hidden] {
         display: none;
     }
+    * {
+        box-sizing: border-box;
+    }
 `
 
 export default EstilosGlobais
