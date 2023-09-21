@@ -9,6 +9,7 @@ const ItemEstilizado = styled.li`
 const LinkEstilizado = styled.a`
     color: ${props => props.$ativo ? '#7B78E5' : '#D9D9D9'};
     cursor: pointer;
+    font-family: ${props => props.$ativo && 'GandhiSans-Bold'};
     font-size: 1.5rem;
     line-height: normal;
 `
