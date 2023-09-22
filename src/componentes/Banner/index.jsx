@@ -5,7 +5,7 @@ const FigureEstilizada = styled.figure`
     background: url(${props => props.$imagem}) center / cover no-repeat;
     border-radius: 20px;
     display: flex;
-    grid-area: banner;
+    flex-grow: 1;
     height: 328px;
     margin: 0;
     padding: 0 4rem;
