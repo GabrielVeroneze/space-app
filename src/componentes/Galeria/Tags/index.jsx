@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import styled from 'styled-components'
 import tags from './tags.json'
 
@@ -18,25 +19,30 @@ const TagTitulo = styled.h3`
 
 const BotaoEstilizado = styled.button`
     color: #FFF;
-    border: 2px solid transparent;
+    border: 2px solid;
+    border-color: ${props => props.$ativo ? '#C98CF1' : 'transparent'};
     border-radius: 10px;
     background-color: rgba(217, 217, 217, 0.30);
     cursor: pointer;
     font-size: 1.5rem;
     line-height: normal;
     padding: 0.5rem;
-
-    &:hover {
-        border-color: #C98CF1;
-    }
 `
 
 const Tags = () => {
+    const [tagAtiva, setTagAtiva] = useState(0)
+
     return (
         <TagsEstilizada>
             <TagTitulo>Busque por tags:</TagTitulo>
             {tags.map(tag => (
-                <BotaoEstilizado key={tag.id}>{tag.titulo}</BotaoEstilizado>
+                <BotaoEstilizado
+                    key={tag.id}
+                    $ativo={tag.id === tagAtiva}
+                    onClick={() => setTagAtiva(tag.id)}
+                >
+                    {tag.titulo}
+                </BotaoEstilizado>
             ))}
         </TagsEstilizada>
     )
