@@ -5,6 +5,7 @@ const ContainerEstilizado = styled.div`
     align-self: center;
     display: flex;
     position: relative;
+    width: 602px;
 `
 
 const InputEstilizado = styled.input`
@@ -17,7 +18,7 @@ const InputEstilizado = styled.input`
     line-height: 1.25rem;
     outline: none;
     padding: 0.75rem 1rem;
-    width: 602px;
+    width: 100%;
 `
 
 const IconeLupa = styled.img`
