@@ -10,27 +10,32 @@ const FundoGradiente = styled.div`
     width: 100%;
 `
 
-const Grid = styled.div`
-    display: grid;
-    gap: 0 1.5rem;
-    grid-template-columns: max-content 1fr;
-    grid-template-areas: 
-        'barra-lateral banner';
+const AppContainer = styled.div`
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1440px;
+`
+
+const MainContainer = styled.main`
+    display: flex;
+    gap: 1.5rem;
 `
 
 const App = () => {
-
     return (
         <FundoGradiente>
             <EstilosGlobais />
-            <Cabecalho />
-            <Grid>
-                <BarraLateral />
-                <Banner
-                    imagemFundo="imagens/foto-destaque.png"
-                    texto="A galeria mais completa de fotos do espaço!"
-                />
-            </Grid>
+            <AppContainer>
+                <Cabecalho />
+                <MainContainer>
+                    <BarraLateral />
+                    <Banner
+                        imagemFundo="imagens/foto-destaque.png"
+                        texto="A galeria mais completa de fotos do espaço!"
+                    />
+                </MainContainer>
+            </AppContainer>
         </FundoGradiente>
     )
 }
