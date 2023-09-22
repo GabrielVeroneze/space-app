@@ -3,6 +3,7 @@ import CampoTexto from "../CampoTexto"
 
 const HeaderEstilizado = styled.header`
     display: flex;
+    gap: 0 1.5rem;
     justify-content: space-between;
     padding: 3.75rem 0 4rem;
 
