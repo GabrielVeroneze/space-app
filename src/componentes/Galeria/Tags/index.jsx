@@ -15,6 +15,7 @@ const TagTitulo = styled.h3`
     font-weight: 400;
     line-height: normal;
     margin: 0;
+    width: 212px;
 `
 
 const BotaoEstilizado = styled.button`
