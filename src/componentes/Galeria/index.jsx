@@ -6,10 +6,21 @@ import Imagem from "./Imagem"
 
 const LayoutGaleria = styled.div`
     display: flex;
+    gap: 1.5rem;
 `
 
 const GaleriaContainer = styled.section`
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    gap: 1.5rem;
+`
+
+const ImagensContainer = styled.section`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
 `
 
 const Galeria = ({ fotos = [] }) => {
@@ -19,9 +30,11 @@ const Galeria = ({ fotos = [] }) => {
             <LayoutGaleria>
                 <GaleriaContainer>
                     <Titulo>Navegue pela galeria</Titulo>
-                    <ul>
-                        {fotos.map(foto => <Imagem key={foto.id} {...foto} />)}
-                    </ul>
+                    <ImagensContainer>
+                        {fotos.map(foto => (
+                            <Imagem key={foto.id} {...foto} />
+                        ))}
+                    </ImagensContainer>
                 </GaleriaContainer>
                 <Populares />
             </LayoutGaleria>
