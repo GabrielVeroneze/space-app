@@ -6,6 +6,7 @@ const TagsEstilizada = styled.section`
     align-items: center;
     display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap;
     margin-top: 1rem;
 `
 
