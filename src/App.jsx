@@ -1,9 +1,11 @@
+import { useState } from "react"
 import styled from "styled-components"
 import EstilosGlobais from "./componentes/EstilosGlobais"
 import Cabecalho from "./componentes/Cabecalho"
 import BarraLateral from "./componentes/BarraLateral"
 import Banner from "./componentes/Banner"
 import Galeria from "./componentes/Galeria"
+import fotos from './fotos.json'
 
 const FundoGradiente = styled.div`
     background: linear-gradient(175deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
@@ -31,6 +33,8 @@ const ConteudoGaleria = styled.section`
 `
 
 const App = () => {
+    const [fotosGaleria, setFotosGaleria] = useState(fotos)
+
     return (
         <FundoGradiente>
             <EstilosGlobais />
@@ -43,7 +47,7 @@ const App = () => {
                             imagemFundo="imagens/foto-destaque.png"
                             texto="A galeria mais completa de fotos do espaço!"
                         />
-                        <Galeria />
+                        <Galeria fotos={fotosGaleria} />
                     </ConteudoGaleria>
                 </MainContainer>
             </AppContainer>
