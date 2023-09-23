@@ -1,60 +1,63 @@
 import styled from "styled-components"
+import BotaoIcone from "../../BotaoIcone"
 
-const FigureEstilizada = styled.figure`
+const Figure = styled.figure`
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    height: 336px;
-    overflow: hidden;
-    width: 448px;
-`
-
-const CaptionEstilizada = styled.figcaption`
-    background-color: #001634;
-    padding: 1rem 1rem 1rem 1.375rem;
-`
-
-const TituloEstilizado = styled.h3`
-    color: #FFF;
-    font-family: 'GandhiSans-Bold';
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: normal;
     margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+
+    & > img {
+        display: block;
+        width: 100%;
+    }
+
+    figcaption {
+        background-color: #001634;
+        padding: 1rem 1rem 1rem 1.375rem;
+
+        h3, h4 {
+            color: #FFF;
+            line-height: normal; 
+            margin: 0;
+        }
+
+        h3 {
+            font-family: 'GandhiSans-Bold';
+            font-size: 1.25rem;
+        }
+
+        h4 {
+            flex-grow: 1;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
 `
 
-const ContainerEstilizado = styled.div`
+const Rodape = styled.div`
     display: flex;
     gap: 1.5rem;
 `
 
-const TextoEstilizado = styled.p`
-    color: #FFF;
-    flex-grow: 1;
-    line-height: normal;
-    margin: 0;
-`
-
-const Icone = styled.button`
-    border: none;
-    background: url(${props => props.$imagem}) center / 20px no-repeat;
-    height: 24px;
-    padding: 0;
-    width: 24px;
-`
-
 const Imagem = ({ titulo, fonte, path }) => {
     return (
-        <FigureEstilizada>
+        <Figure>
             <img src={path} />
-            <CaptionEstilizada>
-                <TituloEstilizado>{titulo}</TituloEstilizado>
-                <ContainerEstilizado>
-                    <TextoEstilizado>{fonte}</TextoEstilizado>
-                    <Icone $imagem="icones/favorito-inativo.svg"></Icone>
-                    <Icone $imagem="icones/expandir.svg"></Icone>
-                </ContainerEstilizado>
-            </CaptionEstilizada>
-        </FigureEstilizada>
+            <figcaption>
+                <h3>{titulo}</h3>
+                <Rodape>
+                    <h4>{fonte}</h4>
+                    <BotaoIcone>
+                        <img src="/icones/favorito-inativo.svg" alt="Ícone de favorito" />
+                    </BotaoIcone>
+                    <BotaoIcone>
+                        <img src="/icones/expandir.svg" alt="Ícone de expandir" />
+                    </BotaoIcone>
+                </Rodape>
+            </figcaption>
+        </Figure>
     )
 }
 
