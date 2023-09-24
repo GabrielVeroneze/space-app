@@ -5,6 +5,7 @@ import Cabecalho from "./componentes/Cabecalho"
 import BarraLateral from "./componentes/BarraLateral"
 import Banner from "./componentes/Banner"
 import Galeria from "./componentes/Galeria"
+import ModalZoom from "./componentes/ModalZoom"
 import fotos from './fotos.json'
 
 const FundoGradiente = styled.div`
@@ -51,6 +52,7 @@ const App = () => {
                     </ConteudoGaleria>
                 </MainContainer>
             </AppContainer>
+            <ModalZoom />
         </FundoGradiente>
     )
 }
