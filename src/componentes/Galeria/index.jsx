@@ -23,7 +23,7 @@ const ImagensContainer = styled.section`
     justify-content: space-between;
 `
 
-const Galeria = ({ fotos = [] }) => {
+const Galeria = ({ fotos = [], aoFotoSelecionada }) => {
     return (
         <>
             <Tags />
@@ -32,7 +32,11 @@ const Galeria = ({ fotos = [] }) => {
                     <Titulo>Navegue pela galeria</Titulo>
                     <ImagensContainer>
                         {fotos.map(foto => (
-                            <Imagem key={foto.id} {...foto} />
+                            <Imagem
+                                key={foto.id}
+                                aoZoomSolicitado={aoFotoSelecionada}
+                                {...foto}
+                            />
                         ))}
                     </ImagensContainer>
                 </GaleriaContainer>
