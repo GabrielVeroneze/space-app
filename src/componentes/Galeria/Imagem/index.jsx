@@ -7,6 +7,7 @@ const Figure = styled.figure`
     margin: 0;
     max-width: 100%;
     overflow: hidden;
+    width: ${props => props.$expandida ? '90%' : 'auto'};
 
     & > img {
         display: block;
@@ -41,20 +42,31 @@ const Rodape = styled.div`
     gap: 1.5rem;
 `
 
-const Imagem = ({ titulo, fonte, path }) => {
+const Imagem = ({ titulo, fonte, path, expandida = false, aoZoomSolicitado }) => {
     return (
-        <Figure>
+        <Figure $expandida={expandida}>
             <img src={path} />
             <figcaption>
                 <h3>{titulo}</h3>
                 <Rodape>
                     <h4>{fonte}</h4>
                     <BotaoIcone>
-                        <img src="/icones/favorito-inativo.svg" alt="Ícone de favorito" />
+                        <img
+                            src="/icones/favorito-inativo.svg"
+                            alt="Ícone de favorito"
+                        />
                     </BotaoIcone>
-                    <BotaoIcone>
-                        <img src="/icones/expandir.svg" alt="Ícone de expandir" />
-                    </BotaoIcone>
+                    {!expandida && (
+                        <BotaoIcone
+                            aria-hidden={expandida}
+                            onClick={() => aoZoomSolicitado({ titulo, fonte, path })}
+                        >
+                            <img
+                                src="/icones/expandir.svg"
+                                alt="Ícone de expandir"
+                            />
+                        </BotaoIcone>
+                    )}
                 </Rodape>
             </figcaption>
         </Figure>
