@@ -35,6 +35,7 @@ const ConteudoGaleria = styled.section`
 
 const App = () => {
     const [fotosGaleria, setFotosGaleria] = useState(fotos)
+    const [fotoModal, setFotoModal] = useState(null)
 
     return (
         <FundoGradiente>
@@ -48,11 +49,14 @@ const App = () => {
                             imagemFundo="imagens/foto-destaque.png"
                             texto="A galeria mais completa de fotos do espaço!"
                         />
-                        <Galeria fotos={fotosGaleria} />
+                        <Galeria
+                            fotos={fotosGaleria}
+                            aoFotoSelecionada={foto => setFotoModal(foto)}
+                        />
                     </ConteudoGaleria>
                 </MainContainer>
             </AppContainer>
-            <ModalZoom />
+            <ModalZoom foto={fotoModal} />
         </FundoGradiente>
     )
 }
