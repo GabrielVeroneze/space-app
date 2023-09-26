@@ -7,7 +7,7 @@ const Figure = styled.figure`
     margin: 0;
     max-width: 100%;
     overflow: hidden;
-    width: ${props => props.$expandida ? '90%' : 'auto'};
+    width: ${props => props.$expandida ? '100%' : 'auto'};
 
     & > img {
         display: block;
