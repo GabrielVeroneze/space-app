@@ -42,15 +42,15 @@ const Rodape = styled.div`
     gap: 1.5rem;
 `
 
-const Imagem = ({ titulo, fonte, path, expandida = false, aoZoomSolicitado }) => {
+const Imagem = ({ foto, expandida = false, aoZoomSolicitado, aoAlternarFavorito }) => {
     return (
         <Figure $expandida={expandida}>
-            <img src={path} />
+            <img src={foto.path} />
             <figcaption>
-                <h3>{titulo}</h3>
+                <h3>{foto.titulo}</h3>
                 <Rodape>
-                    <h4>{fonte}</h4>
-                    <BotaoIcone>
+                    <h4>{foto.fonte}</h4>
+                    <BotaoIcone onClick={() => aoAlternarFavorito(foto)}>
                         <img
                             src="/icones/favorito-inativo.svg"
                             alt="Ícone de favorito"
@@ -59,7 +59,7 @@ const Imagem = ({ titulo, fonte, path, expandida = false, aoZoomSolicitado }) =>
                     {!expandida && (
                         <BotaoIcone
                             aria-hidden={expandida}
-                            onClick={() => aoZoomSolicitado({ titulo, fonte, path })}
+                            onClick={() => aoZoomSolicitado(foto)}
                         >
                             <img
                                 src="/icones/expandir.svg"
