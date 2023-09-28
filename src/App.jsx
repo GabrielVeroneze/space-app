@@ -6,6 +6,7 @@ import BarraLateral from "./componentes/BarraLateral"
 import Banner from "./componentes/Banner"
 import Galeria from "./componentes/Galeria"
 import ModalZoom from "./componentes/ModalZoom"
+import Rodape from "./componentes/Rodape"
 import fotos from './fotos.json'
 
 const FundoGradiente = styled.div`
@@ -78,6 +79,7 @@ const App = () => {
                 aoFechar={() => setFotoModal(null)}
                 aoAlternarFavorito={aoAlternarFavorito}
             />
+            <Rodape />
         </FundoGradiente>
     )
 }
