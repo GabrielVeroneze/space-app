@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import styled from 'styled-components'
 import tags from './tags.json'
 
@@ -31,19 +30,17 @@ const BotaoEstilizado = styled.button`
     padding: 0.5rem;
 `
 
-const Tags = () => {
-    const [tagAtiva, setTagAtiva] = useState(0)
-
+const Tags = ({ tag, setTag }) => {    
     return (
         <TagsEstilizada>
             <TagTitulo>Busque por tags:</TagTitulo>
-            {tags.map(tag => (
+            {tags.map(dados => (
                 <BotaoEstilizado
-                    key={tag.id}
-                    $ativo={tag.id === tagAtiva}
-                    onClick={() => setTagAtiva(tag.id)}
+                    key={dados.id}
+                    $ativo={dados.tag === tag}
+                    onClick={() => setTag(dados.tag)}
                 >
-                    {tag.titulo}
+                    {dados.titulo}
                 </BotaoEstilizado>
             ))}
         </TagsEstilizada>

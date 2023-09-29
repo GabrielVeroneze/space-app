@@ -23,10 +23,10 @@ const ImagensContainer = styled.section`
     justify-content: space-between;
 `
 
-const Galeria = ({ fotos = [], aoFotoSelecionada, aoAlternarFavorito }) => {
+const Galeria = ({ fotos = [], tag, setTag, aoFotoSelecionada, aoAlternarFavorito }) => {
     return (
         <>
-            <Tags />
+            <Tags tag={tag} setTag={setTag} />
             <LayoutGaleria>
                 <GaleriaContainer>
                     <Titulo>Navegue pela galeria</Titulo>

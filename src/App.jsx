@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import styled from "styled-components"
 import EstilosGlobais from "./componentes/EstilosGlobais"
 import Cabecalho from "./componentes/Cabecalho"
@@ -37,6 +37,19 @@ const ConteudoGaleria = styled.section`
 const App = () => {
     const [fotosGaleria, setFotosGaleria] = useState(fotos)
     const [fotoModal, setFotoModal] = useState(null)
+    const [tag, setTag] = useState(0)
+    const [filtro, setFiltro] = useState('')
+
+    useEffect(() => {
+        const fotosFiltradas = fotos.filter(foto => {
+            const filtroPorTag = !tag || foto.tagId === tag;
+            const filtroPorTitulo = !filtro || foto.titulo.toLowerCase().includes(filtro.toLowerCase())
+            
+            return filtroPorTag && filtroPorTitulo
+        })
+
+        setFotosGaleria(fotosFiltradas)
+    }, [filtro, tag])
 
     const aoAlternarFavorito = (fotoFavorita) => {
         if(fotoFavorita.id === fotoModal?.id) {
@@ -58,7 +71,7 @@ const App = () => {
         <FundoGradiente>
             <EstilosGlobais />
             <AppContainer>
-                <Cabecalho />
+                <Cabecalho setFiltro={setFiltro} />
                 <MainContainer>
                     <BarraLateral />
                     <ConteudoGaleria>
@@ -70,6 +83,8 @@ const App = () => {
                             fotos={fotosGaleria}
                             aoFotoSelecionada={foto => setFotoModal(foto)}
                             aoAlternarFavorito={aoAlternarFavorito}
+                            tag={tag}
+                            setTag={setTag}
                         />
                     </ConteudoGaleria>
                 </MainContainer>
