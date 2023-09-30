@@ -23,6 +23,32 @@ const ModalEstilizado = styled.dialog`
         right: 24px;
         top: 24px;
     }
+
+    @media screen and (max-width: 1024px) {
+        width: 93.5vw;
+
+        figure {
+            h3, h4 {
+                line-height: 1.5rem;
+            }
+            h3 {
+                font-size: 1.25rem;
+            }
+            h4 {
+                font-size: 1rem;
+            }
+        }
+        
+        button {
+            height: 24px;
+            width: 24px;
+
+            & > img {
+                height: 22px;
+                width: 22px;
+            }
+        }
+    }
 `
 
 const ModalZoom = ({ foto, aoFechar, aoAlternarFavorito }) => {

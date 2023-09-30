@@ -40,6 +40,7 @@ const BotaoEstilizado = styled.button`
     padding: 0.5rem;
 
     @media screen and (max-width: 1024px) {
+        min-width: 82px;
         padding: 0.5rem 0.25rem;
     }
 `
