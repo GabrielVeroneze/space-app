@@ -46,6 +46,7 @@ const App = () => {
     const [fotoModal, setFotoModal] = useState(null)
     const [tag, setTag] = useState(0)
     const [filtro, setFiltro] = useState('')
+    const [menuAberto, setMenuAberto] = useState(false)
 
     useEffect(() => {
         const fotosFiltradas = fotos.filter(foto => {
@@ -78,9 +79,9 @@ const App = () => {
         <FundoGradiente>
             <EstilosGlobais />
             <AppContainer>
-                <Cabecalho setFiltro={setFiltro} />
+                <Cabecalho setFiltro={setFiltro} setMenuAberto={setMenuAberto} />
                 <MainContainer>
-                    <BarraLateral />
+                    <BarraLateral menuAberto={menuAberto} setMenuAberto={setMenuAberto} />
                     <Banner
                         imagemFundo="imagens/foto-destaque.png"
                         texto="A galeria mais completa de fotos do espaço!"
