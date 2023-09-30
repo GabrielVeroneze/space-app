@@ -7,6 +7,10 @@ const Titulo = styled.h2`
     line-height: normal;
     margin: 0;
     text-align: ${props => props.$alinhamento ? props.$alinhamento : 'left'};
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1.75rem;
+    }
 `
 
 export default Titulo

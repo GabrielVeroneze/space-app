@@ -7,6 +7,11 @@ import Imagem from "./Imagem"
 const LayoutGaleria = styled.div`
     display: flex;
     gap: 1.5rem;
+    grid-area: galeria;
+
+    @media screen and (max-width: 1024px) {
+        gap: 1.25rem;
+    }
 `
 
 const GaleriaContainer = styled.section`
@@ -14,6 +19,10 @@ const GaleriaContainer = styled.section`
     flex-direction: column;
     flex-grow: 1;
     gap: 1.5rem;
+
+    @media screen and (max-width: 1024px) {
+        gap: 1.625rem;
+    }
 `
 
 const ImagensContainer = styled.section`

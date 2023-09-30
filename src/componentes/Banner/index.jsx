@@ -5,10 +5,15 @@ const FigureEstilizada = styled.figure`
     background: url(${props => props.$imagem}) center / cover no-repeat;
     border-radius: 20px;
     display: flex;
-    flex-grow: 1;
+    grid-area: banner;
     height: 328px;
     margin: 0;
     padding: 0 4rem;
+
+    @media screen and (max-width: 1024px) {
+        height: 276px;
+        padding: 0 1.5rem;
+    }
 `
 
 const TituloEstilizado = styled.h1`
@@ -19,6 +24,10 @@ const TituloEstilizado = styled.h1`
     margin: 0;
     min-width: 266px;
     width: 29.5%;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 2rem;
+    }
 `
 
 const Banner = ({ imagemFundo, texto }) => {

@@ -5,8 +5,14 @@ const TagsEstilizada = styled.section`
     align-items: center;
     display: flex;
     gap: 1.5rem;
+    grid-area: tags;
     flex-wrap: wrap;
     margin-top: 1rem;
+
+    @media screen and (max-width: 1024px) {
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
 `
 
 const TagTitulo = styled.h3`
@@ -16,6 +22,10 @@ const TagTitulo = styled.h3`
     line-height: normal;
     margin: 0;
     width: 212px;
+
+    @media screen and (max-width: 1024px) {
+        width: auto;
+    }
 `
 
 const BotaoEstilizado = styled.button`
@@ -28,6 +38,10 @@ const BotaoEstilizado = styled.button`
     font-size: 1.5rem;
     line-height: normal;
     padding: 0.5rem;
+
+    @media screen and (max-width: 1024px) {
+        padding: 0.5rem 0.25rem;
+    }
 `
 
 const Tags = ({ tag, setTag }) => {    

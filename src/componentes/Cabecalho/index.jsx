@@ -11,6 +11,11 @@ const HeaderEstilizado = styled.header`
         height: auto;
         max-width: 212px;
     }
+
+    @media screen and (max-width: 1024px) {
+        gap: 0 3.625rem;
+        padding: 2.5rem 0 2.75rem;
+    }
 `
 
 const Cabecalho = ({ setFiltro }) => {

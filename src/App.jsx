@@ -23,15 +23,22 @@ const AppContainer = styled.div`
 `
 
 const MainContainer = styled.main`
-    display: flex;
-    gap: 1.5rem;
-`
+    display: grid;
+    gap: 2.5rem 1.5rem;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: repeat(3, max-content);
+    grid-template-areas: 
+        "barra-lateral banner"
+        "barra-lateral tags"
+        "barra-lateral galeria";
 
-const ConteudoGaleria = styled.section`
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 2.5rem;
+    @media screen and (max-width: 1024px) {
+        gap: 2.625rem 3.625rem;
+        grid-template-areas: 
+        "barra-lateral banner"
+        "tags tags"
+        "galeria galeria";
+    }
 `
 
 const App = () => {
@@ -74,19 +81,17 @@ const App = () => {
                 <Cabecalho setFiltro={setFiltro} />
                 <MainContainer>
                     <BarraLateral />
-                    <ConteudoGaleria>
-                        <Banner
-                            imagemFundo="imagens/foto-destaque.png"
-                            texto="A galeria mais completa de fotos do espaço!"
-                        />
-                        <Galeria
-                            fotos={fotosGaleria}
-                            aoFotoSelecionada={foto => setFotoModal(foto)}
-                            aoAlternarFavorito={aoAlternarFavorito}
-                            tag={tag}
-                            setTag={setTag}
-                        />
-                    </ConteudoGaleria>
+                    <Banner
+                        imagemFundo="imagens/foto-destaque.png"
+                        texto="A galeria mais completa de fotos do espaço!"
+                    />
+                    <Galeria
+                        fotos={fotosGaleria}
+                        aoFotoSelecionada={foto => setFotoModal(foto)}
+                        aoAlternarFavorito={aoAlternarFavorito}
+                        tag={tag}
+                        setTag={setTag}
+                    />
                 </MainContainer>
             </AppContainer>
             <ModalZoom

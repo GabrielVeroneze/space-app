@@ -35,11 +35,32 @@ const Figure = styled.figure`
             font-weight: 400;
         }
     }
+
+    @media screen and (max-width: 1024px) {
+        width: ${props => props.$expandida ? '100%' : '246px'};
+
+        figcaption {
+            padding: 1rem;
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            h4 {
+                font-size: 0.875rem;
+            }
+        }
+    }
 `
 
 const Rodape = styled.div`
     display: flex;
     gap: 1.5rem;
+
+    @media screen and (max-width: 1024px) {
+        gap: 1rem;
+        margin-top: 0.25rem;
+    }
 `
 
 const Imagem = ({ foto, expandida = false, aoZoomSolicitado, aoAlternarFavorito }) => {

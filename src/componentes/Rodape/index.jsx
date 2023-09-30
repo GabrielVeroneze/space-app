@@ -9,6 +9,12 @@ const RodapeEstilizado = styled.footer`
     margin-top: 4.5rem;
     padding: 1.5rem;
     width: 100%;
+
+    @media screen and (max-width: 1024px) {
+        height: 72px;
+        margin-top: 3rem;
+        padding: 1.25rem 1.5rem;
+    }
 `
 
 const IconesContainer = styled.ul`
