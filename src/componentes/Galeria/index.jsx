@@ -12,6 +12,11 @@ const LayoutGaleria = styled.div`
     @media screen and (max-width: 1024px) {
         gap: 1.25rem;
     }
+
+    @media screen and (max-width: 743px) {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
 `
 
 const GaleriaContainer = styled.section`
@@ -23,13 +28,17 @@ const GaleriaContainer = styled.section`
     @media screen and (max-width: 1024px) {
         gap: 1.625rem;
     }
+
+    @media screen and (max-width: 743px) {
+        gap: 2rem;
+    }
 `
 
 const ImagensContainer = styled.section`
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
 `
 
 const Galeria = ({ fotos = [], tag, setTag, aoFotoSelecionada, aoAlternarFavorito }) => {

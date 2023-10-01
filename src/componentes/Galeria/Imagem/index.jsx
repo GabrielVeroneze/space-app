@@ -51,6 +51,14 @@ const Figure = styled.figure`
             }
         }
     }
+
+    @media screen and (max-width: 743px) {
+        width: ${props => props.$expandida ? '100%' : '312px'};
+
+        figcaption {
+            padding: 1.25rem;
+        }
+    }
 `
 
 const Rodape = styled.div`

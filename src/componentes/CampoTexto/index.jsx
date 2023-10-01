@@ -6,6 +6,10 @@ const ContainerEstilizado = styled.div`
     display: flex;
     position: relative;
     width: 602px;
+
+    @media screen and (max-width: 743px) {
+        flex-grow: 1;
+    }
 `
 
 const InputEstilizado = styled.input`

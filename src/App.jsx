@@ -39,6 +39,15 @@ const MainContainer = styled.main`
         "tags tags"
         "galeria galeria";
     }
+
+    @media screen and (max-width: 743px) {
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "banner"
+        "tags"
+        "galeria";
+    }
 `
 
 const App = () => {

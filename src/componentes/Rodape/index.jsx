@@ -15,6 +15,13 @@ const RodapeEstilizado = styled.footer`
         margin-top: 3rem;
         padding: 1.25rem 1.5rem;
     }
+
+    @media screen and (max-width: 743px) {
+        flex-direction: column-reverse;
+        height: 104px;
+        margin-top: 2.5rem;
+        padding: 1rem;
+    }
 `
 
 const IconesContainer = styled.ul`
@@ -24,6 +31,10 @@ const IconesContainer = styled.ul`
     list-style: none;
     margin: 0;
     padding: 0;
+
+    @media screen and (max-width: 743px) {
+        gap: 2.625rem;
+    }
 `
 
 const Creditos = styled.p`

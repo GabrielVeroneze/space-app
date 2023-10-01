@@ -11,6 +11,11 @@ const ColunaFotos = styled.aside`
     @media screen and (max-width: 1024px) {
         margin: 1.625rem 0 1.5rem;
     }
+
+    @media screen and (max-width: 743px) {
+        align-items: center;
+        margin: 2rem 0 1.5rem;
+    }
 `
 
 const ImagemEstilizada = styled.img`
@@ -20,6 +25,11 @@ const ImagemEstilizada = styled.img`
     @media screen and (max-width: 1024px) {
         height: 158px;
         max-width: 156px;
+    }
+
+    @media screen and (max-width: 743px) {
+        max-width: 100%;
+        width: 312px;
     }
 `
 

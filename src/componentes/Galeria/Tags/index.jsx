@@ -13,6 +13,12 @@ const TagsEstilizada = styled.section`
         gap: 1rem;
         margin-top: 0.5rem;
     }
+
+    @media screen and (max-width: 743px) {
+        gap: 1.5rem 0.125rem;
+        justify-content: space-evenly;
+        margin-top: 0;
+    }
 `
 
 const TagTitulo = styled.h3`
@@ -25,6 +31,12 @@ const TagTitulo = styled.h3`
 
     @media screen and (max-width: 1024px) {
         width: auto;
+    }
+
+    @media screen and (max-width: 743px) {
+        font-size: 1.25rem;
+        text-align: center;
+        width: 100%;
     }
 `
 
@@ -42,6 +54,12 @@ const BotaoEstilizado = styled.button`
     @media screen and (max-width: 1024px) {
         min-width: 82px;
         padding: 0.5rem 0.25rem;
+    }
+
+    @media screen and (max-width: 743px) {
+        font-size: 1rem;
+        min-width: auto;
+        padding: 0.375rem 0.25rem;
     }
 `
 

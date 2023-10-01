@@ -49,6 +49,26 @@ const ModalEstilizado = styled.dialog`
             }
         }
     }
+
+    @media screen and (max-width: 743px) {
+        width: 86.65vw;
+
+        figure {
+            h3 {
+                font-size: 1rem;
+            }
+            h4 {
+                font-size: 0.875rem;
+            }
+        }
+
+        button {
+            & > img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
 `
 
 const ModalZoom = ({ foto, aoFechar, aoAlternarFavorito }) => {

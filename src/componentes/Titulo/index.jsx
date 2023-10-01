@@ -11,6 +11,11 @@ const Titulo = styled.h2`
     @media screen and (max-width: 1024px) {
         font-size: 1.75rem;
     }
+
+    @media screen and (max-width: 743px) {
+        font-size: 1.25rem;
+        text-align: left;
+    }
 `
 
 export default Titulo
