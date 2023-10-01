@@ -54,6 +54,8 @@ const ModalEstilizado = styled.dialog`
         width: 86.65vw;
 
         figure {
+            max-width: unset;
+
             h3 {
                 font-size: 1rem;
             }

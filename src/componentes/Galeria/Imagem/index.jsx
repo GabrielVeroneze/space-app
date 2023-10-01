@@ -53,7 +53,8 @@ const Figure = styled.figure`
     }
 
     @media screen and (max-width: 743px) {
-        width: ${props => props.$expandida ? '100%' : '312px'};
+        max-width: 312px;
+        width: ${props => props.$expandida ? '100%' : 'auto'};
 
         figcaption {
             padding: 1.25rem;
