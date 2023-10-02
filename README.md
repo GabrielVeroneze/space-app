@@ -65,8 +65,8 @@
 
 ## :computer: Ferramentas utilizadas
 
-| &nbsp; &nbsp; React | &nbsp; &nbsp; Vite | Styled Components | 
-| ------------------- | ------------------ | ----------------- |
+| &nbsp; React | &nbsp; Vite | Styled Components | 
+| ------------ | ----------- | ----------------- |
 <img height="65px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> | <img height="65px" src="https://github.com/GabrielVeroneze/space-app/assets/95183901/6810d45b-69d9-4282-a255-f4afa9c06f54"> | &nbsp; &nbsp; <img height="100px" src="https://github.com/GabrielVeroneze/feira-virtual/assets/95183901/17447cac-f50e-4b9a-91bf-52617c28a16f">
 
 ## :open_file_folder: Acesso ao projeto
