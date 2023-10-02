@@ -19,7 +19,7 @@
 - [Instruções](#clipboard-instruções)
 - [Demonstração Visual](#demonstração-visual)
 
-<h1 align="center" id="descrição">Space App</h1>
+<h1 align="center" id="descrição"><img src="https://github.com/GabrielVeroneze/space-app/assets/95183901/900fd7ea-e4a4-41a7-ab64-c964bd2b5072"></h1>
 <p align="center">O Space App é um catálogo de imagens do espaço, nele os usuários podem explorar imagens do universo de forma eficiente e conveniente. A aplicação oferece diversas funcionalidades para tornar a experiência do usuário mais envolvente e informativa.</p>
 
 ## :toolbox: Funcionalidades e Recursos
@@ -68,7 +68,7 @@
 
 | React | Vite | Styled Components | 
 | ----- | ---- | ----------------- |
-<img height="65px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> |  | <img height="100px" src="https://github.com/GabrielVeroneze/feira-virtual/assets/95183901/17447cac-f50e-4b9a-91bf-52617c28a16f">
+<img height="65px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> | <img height="65px" src="https://github.com/GabrielVeroneze/space-app/assets/95183901/6810d45b-69d9-4282-a255-f4afa9c06f54"> | <img height="100px" src="https://github.com/GabrielVeroneze/feira-virtual/assets/95183901/17447cac-f50e-4b9a-91bf-52617c28a16f">
 
 ## :open_file_folder: Acesso ao projeto
 Você pode baixar o projeto diretamente:  
