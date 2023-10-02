@@ -5,7 +5,7 @@
 
 ## Índice
 
-- [Descrição](#descrição)
+- [Descrição](#descricao)
 - [Funcionalidades e Recursos](#toolbox-funcionalidades-e-recursos)
    - [Página Inícial](#página-inícial)
    - [Recursos de Interatividade](#recursos-de-interatividade)
@@ -18,7 +18,7 @@
 - [Instruções](#clipboard-instruções)
 - [Demonstração Visual](#demonstração-visual)
 
-<h1 align="center" id="descrição"><img width="250px" src="https://github.com/GabrielVeroneze/space-app/assets/95183901/900fd7ea-e4a4-41a7-ab64-c964bd2b5072"></h1>
+<h1 align="center" id="descricao"><img width="250px" src="https://github.com/GabrielVeroneze/space-app/assets/95183901/900fd7ea-e4a4-41a7-ab64-c964bd2b5072"></h1>
 <p align="center">O Space App é um catálogo de imagens do espaço, nele os usuários podem explorar imagens do universo de forma eficiente e conveniente. A aplicação oferece diversas funcionalidades para tornar a experiência do usuário mais envolvente e informativa.</p>
 
 ## :toolbox: Funcionalidades e Recursos
@@ -95,9 +95,9 @@ Para usar este projeto em seu computador localmente, você precisará seguir est
 
 4. Após a instalação das dependências, inicie o servidor de desenvolvimento executando o seguinte comando:
    ```
-   npm start
+   npm run dev
    ```
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Isso abrirá automaticamente a aplicação no navegador. Se não abrir, acesse o endereço http://localhost:3000.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Você receberá uma mensagem informando a URL onde a aplicação está sendo executada, geralmente em http://localhost:5173.
 <br>
 
 ## Demonstração Visual
