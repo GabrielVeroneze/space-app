@@ -7,19 +7,18 @@
 
 - [Descrição](#descrição)
 - [Funcionalidades e Recursos](#toolbox-funcionalidades-e-recursos)
-   - [Páginas Principais](#páginas-principais)
-      - [Login](#login)
-      - [Feira](#feira)
-      - [Carrinho](#carrinho)
-   - [Gerenciamento de Estado](#gerenciamento-de-estado)
-   - [Roteamento](#roteamento)
-   - [Boas Práticas e Responsividade](#boas-práticas-e-responsividade)
+   - [Página Inícial](#página-inícial)
+   - [Recursos de Interatividade](#recursos-de-interatividade)
+   - [Filtros e Busca](#filtros-e-busca)
+   - [Navegação](#navegação)
+   - [Recursos Utilizados](#recursos-utilizados)
+   - [Responsividade](#responsividade)
 - [Ferramentas utilizadas](#computer-ferramentas-utilizadas)
 - [Acesso ao projeto](#open_file_folder-acesso-ao-projeto)
 - [Instruções](#clipboard-instruções)
 - [Demonstração Visual](#demonstração-visual)
 
-<h1 align="center" id="descrição"><img src="https://github.com/GabrielVeroneze/space-app/assets/95183901/900fd7ea-e4a4-41a7-ab64-c964bd2b5072"></h1>
+<h1 align="center" id="descrição"><img width="250px" src="https://github.com/GabrielVeroneze/space-app/assets/95183901/900fd7ea-e4a4-41a7-ab64-c964bd2b5072"></h1>
 <p align="center">O Space App é um catálogo de imagens do espaço, nele os usuários podem explorar imagens do universo de forma eficiente e conveniente. A aplicação oferece diversas funcionalidades para tornar a experiência do usuário mais envolvente e informativa.</p>
 
 ## :toolbox: Funcionalidades e Recursos
@@ -66,17 +65,17 @@
 
 ## :computer: Ferramentas utilizadas
 
-| React | Vite | Styled Components | 
-| ----- | ---- | ----------------- |
-<img height="65px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> | <img height="65px" src="https://github.com/GabrielVeroneze/space-app/assets/95183901/6810d45b-69d9-4282-a255-f4afa9c06f54"> | <img height="100px" src="https://github.com/GabrielVeroneze/feira-virtual/assets/95183901/17447cac-f50e-4b9a-91bf-52617c28a16f">
+| &nbsp; &nbsp; React | &nbsp; &nbsp; Vite | Styled Components | 
+| ------------------- | ------------------ | ----------------- |
+<img height="65px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> | <img height="65px" src="https://github.com/GabrielVeroneze/space-app/assets/95183901/6810d45b-69d9-4282-a255-f4afa9c06f54"> | &nbsp; &nbsp; <img height="100px" src="https://github.com/GabrielVeroneze/feira-virtual/assets/95183901/17447cac-f50e-4b9a-91bf-52617c28a16f">
 
 ## :open_file_folder: Acesso ao projeto
 Você pode baixar o projeto diretamente:  
-[Baixar código fonte](https://github.com/GabrielVeroneze/feira-virtual/archive/refs/heads/master.zip)
+[Baixar código fonte](https://github.com/GabrielVeroneze/space-app/archive/refs/heads/main.zip)
 
 Também é possível clonar o repositório usando o seguinte comando:
 ```
-git clone https://github.com/GabrielVeroneze/feira-virtual.git
+git clone https://github.com/GabrielVeroneze/space-app.git
 ```
 
 ## :clipboard: Instruções
