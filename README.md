@@ -1,4 +1,4 @@
-<p align="center"> <img src="https://github.com/GabrielVeroneze/space-app/assets/95183901/cb713a42-33f4-41cf-83d5-9df0ffad05c6"> </p>
+<p align="center"> <img src="https://github.com/GabrielVeroneze/space-app/assets/95183901/cb713a42-33f4-41cf-83d5-9df0ffad05c6" style="border-radius: 20px"> </p>
 <p>Projeto desenvolvido durante o curso "React: estilize componentes com Styled Components e manipule arquivos estáticos" da Alura.</p>
 
 <hr>
@@ -97,21 +97,21 @@ Para usar este projeto em seu computador localmente, você precisará seguir est
    ```
    npm run dev
    ```
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Você receberá uma mensagem com a URL onde a aplicação está sendo executada, geralmente em http://localhost:5173.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Você receberá uma mensagem com a URL de execução da aplicação, geralmente em http://localhost:5173.
 <br>
 
 ## Demonstração Visual
 `Página Inícial`
-![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/257b1438-4a3b-4d2a-b985-94c11e0d0ecb)
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/4cf97005-2aa8-41a8-b91a-aa787f5a1217)
 
 `Filtrando por Tags`
-![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/2c47900c-7f24-4a80-909c-bd9ea4ca7ea6)
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/6b01867e-e373-488d-917a-d2823cf7744c)
 
 `Filtrando por Título`
-![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/d8527d7a-3a9e-45cb-809a-cc79a7e75ad7)
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/b7e033b9-851b-495c-9a43-eaa1f20457ad)
 
 `Favoritando Imagem`
-![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/78f7f1fb-0905-429a-a820-a9ef9d68b897)
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/4e5cce60-774f-4d28-8695-1b4f54c801d2)
 
 `Ampliando Imagem`
-![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/9f3096b3-52fe-4b72-afce-47cabfe1fc1a)
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/406b821d-3621-4a4b-83b8-f9da4ebc15b4)
