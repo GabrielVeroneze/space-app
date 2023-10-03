@@ -102,16 +102,16 @@ Para usar este projeto em seu computador localmente, você precisará seguir est
 
 ## Demonstração Visual
 `Página Inícial`
-![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/4cf97005-2aa8-41a8-b91a-aa787f5a1217)
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/d1c29281-76ef-4eb5-9e2c-cfd3cfbf166b)
 
 `Filtrando por Tags`
-![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/6b01867e-e373-488d-917a-d2823cf7744c)
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/0aaeee2b-b55c-40b2-83ff-9297ec7e0366)
 
 `Filtrando por Título`
-![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/b7e033b9-851b-495c-9a43-eaa1f20457ad)
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/444c6b1c-f953-40ac-8d83-bb5767236417)
 
 `Favoritando Imagem`
-![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/4e5cce60-774f-4d28-8695-1b4f54c801d2)
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/ca4c360b-2c46-47a4-9c14-36c30acdc32a)
 
 `Ampliando Imagem`
-![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/406b821d-3621-4a4b-83b8-f9da4ebc15b4)
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/f3c1710d-9f9e-49a3-8490-3acc847f8497)
