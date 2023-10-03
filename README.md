@@ -1,4 +1,4 @@
-<p align="center"> <img src="https://imgur.com/QDt4Sby.png" alt="React: estilize componentes com Styled Components e manipule arquivos estáticos"> </p>
+<p align="center"> <img src="https://github.com/GabrielVeroneze/space-app/assets/95183901/cb713a42-33f4-41cf-83d5-9df0ffad05c6"> </p>
 <p>Projeto desenvolvido durante o curso "React: estilize componentes com Styled Components e manipule arquivos estáticos" da Alura.</p>
 
 <hr>
@@ -97,18 +97,21 @@ Para usar este projeto em seu computador localmente, você precisará seguir est
    ```
    npm run dev
    ```
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Você receberá uma mensagem informando a URL onde a aplicação está sendo executada, geralmente em http://localhost:5173.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Você receberá uma mensagem com a URL onde a aplicação está sendo executada, geralmente em http://localhost:5173.
 <br>
 
 ## Demonstração Visual
-`Inserindo Dados`
-![Feira Virtual](https://github.com/GabrielVeroneze/feira-virtual/assets/95183901/aa4faeaf-5598-43c7-a439-718252d88fb0)
+`Página Inícial`
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/257b1438-4a3b-4d2a-b985-94c11e0d0ecb)
 
-`Adicionando Produtos`
-![Feira Virtual](https://github.com/GabrielVeroneze/feira-virtual/assets/95183901/456eef8d-bf8c-4262-983f-b61fa6be8770)
+`Filtrando por Tags`
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/2c47900c-7f24-4a80-909c-bd9ea4ca7ea6)
 
-`Selecionando Opção de Pagamento`
-![Feira Virtual](https://github.com/GabrielVeroneze/feira-virtual/assets/95183901/41586a2d-d20c-423b-b5ce-8ca489107900)
+`Filtrando por Título`
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/d8527d7a-3a9e-45cb-809a-cc79a7e75ad7)
 
-`Efetuando Compra`
-![Feira Virtual](https://github.com/GabrielVeroneze/feira-virtual/assets/95183901/c79b73d7-f17f-4c73-a37f-d2c0f019a169)
+`Favoritando Imagem`
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/78f7f1fb-0905-429a-a820-a9ef9d68b897)
+
+`Ampliando Imagem`
+![Space App](https://github.com/GabrielVeroneze/space-app/assets/95183901/9f3096b3-52fe-4b72-afce-47cabfe1fc1a)
