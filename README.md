@@ -85,7 +85,7 @@ Para usar este projeto em seu computador localmente, você precisará seguir est
 
 2. Abra o terminal e navegue até a pasta raiz do projeto usando o comando `cd` no terminal. Por exemplo:
    ```
-   cd meu-projeto
+   cd space-app
    ```
 3. Antes de iniciar a aplicação, instale as dependências necessárias executando o seguinte comando:
    ```
